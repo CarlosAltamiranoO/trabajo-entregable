@@ -1,0 +1,33 @@
+<h3>carrito</h3><br>
+<form id="formCrearCarrito">
+<input type="submit" value="Crear carrito"><p style="color: red"    id="resCarrito"></p>
+</form>
+
+<hr>
+
+<h3>cargar producto al carrito</h3><br>
+<form id="formCargarCarrito" >
+<label for="input_idCargarCarrito">id del carrito: </label><input type="text" name="idCargarCarrito" id="input_idCargarCarrito"><br>
+<label for="input_idCargarProducto">id del producto a cargar: </label><input type="text" name="idCargarProducto" id="input_idCargarProducto"><br>
+<br><input type="submit" value="Cargar al carrito"><p style="color: red"    id="resBCarrito"></p>
+</form>
+
+<hr>
+
+<h3>vaciar carrito</h3><br>
+<form id="formVaciarCarrito"  >
+<label for="input_idVaciarCarrito">id del carrito: </label><input type="text" name="idVaciarCarrito" id="input_idVaciarCarrito"><br>
+<br><button type="submit">Vaciar carrito</button><p style="color: red"    id="resVCarrito"></p>
+</form>
+
+
+<hr>
+
+<h3>ir a carrito</h3>
+<form id="formGoCarrito"  >
+<label for="input_idGoCarrito">id del carrito: </label><input type="text" name="idGoCarrito" id="input_idVGoCarrito"><br>
+<br><button type="submit">acceder al carrito</button>
+</form>
+
+
+<script src="/js/formcarrito.js"></script>

@@ -1,0 +1,18 @@
+<h3>producto</h3><br>
+{{#if product}}
+    <h4>Titulo: {{product.title}} | Desripcion : {{product.description}} | codigo: {{product.code}} | Precio: {{product.price}} | Categoria: {{product.category}} | Stock: {{product.stock}} </h4><br>
+{{else}}
+<p>no hay producto para mostrar</p> 
+{{/if}}
+
+<form id="formAgregarCarrito">
+    <input type="hidden" name="idProducto" id="input_idProducto" value="{{product._id}}">
+    <label for="input_carrito">ingrese el id de carrito </label>
+    <input type="text" name="Carrito" id="input_carrito"><br>
+    <button type="submit">Guardar</button>
+</form>
+<p style="color: red"    id="resVCarrito"></p>
+
+<a href="javascript:history.back(-1);" title="Ir la página anterior">Volver</a>
+
+<script src="/js/formIdProductos.js"></script>
